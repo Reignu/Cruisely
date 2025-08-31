@@ -330,10 +330,6 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ### Development Workflow
 
 1. **Fork** the repository
@@ -370,32 +366,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🏢 Enterprise Support
-
-For enterprise support, custom features, or consulting services:
-
-- **Email**: enterprise@cruisely.com
-- **Documentation**: [docs.cruisely.com](https://docs.cruisely.com)
-- **Support Portal**: [support.cruisely.com](https://support.cruisely.com)
-
----
-
-## 👥 Team
-
-**Core Contributors**
-- [Your Name] - *Lead Developer* 
-- [Team Member] - *Frontend Developer*
-- [Team Member] - *DevOps Engineer*
-
-**Original Academic Project Contributors**
-- Artur Radiuk, Vitalii Shulhan, Szymon Wróbel, Damian Bednarek, Michal Klyz, Grzegorz Kempa, Szymon Jeziorski, Pawel Florczuk
-
----
-
 <div align="center">
 
 **Built with ❤️ for the cruise industry**
 
-[🌟 Give us a star](https://github.com/your-org/cruisely) • [📖 Documentation](https://docs.cruisely.com) • [🐛 Report Bug](https://github.com/your-org/cruisely/issues)
+[🌟 Give a star](https://github.com/your-org/cruisely) • [🐛 Report Bug](ungier.adam@gmail.com)
 
 </div>
