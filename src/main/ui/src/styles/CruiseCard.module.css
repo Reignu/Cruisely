@@ -1,0 +1,88 @@
+.wrapper {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/ship3.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper * {
+    transition: opacity .5s ease-in-out;
+}
+
+.cost {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 10px 0;
+    background-color: var(--green);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.eye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+
+.wrapper:hover .cost,
+.wrapper:hover .description {
+    opacity: 0;
+}
+
+.wrapper:hover .eye {
+    opacity: 1;
+}
+
+.eye > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+

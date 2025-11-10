@@ -1,0 +1,65 @@
+.wrapper.wrapper {
+    flex-direction: column;
+}
+
+.item.item,
+.change-item.change-item {
+    margin-bottom: 24px;
+}
+
+.item h3,
+.change-item h3,
+.item h4,
+.change-item h4,
+.item h6,
+.change-item h6,
+.item p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.text-dark {
+    color: var(--white);
+}
+
+.text-light {
+    color: var(--dark);
+}
+
+.item h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.item h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.item h6 {
+    font-weight: 200;
+    font-size: 0.75rem;
+}
+
+.item p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.item>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-item>div {
+    margin: 16px 0;
+    display: flex;
+}
+
+.change-item>div>* {
+    margin-right: 16px;
+}
+
+.change-item>div>*:last-child {
+    margin-right: 0;
+}

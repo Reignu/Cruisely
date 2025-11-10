@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="ssbd03adminPU" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:app/jdbc/ssbd03adminDS</jta-data-source>
+
+        <!--        <excluded-unlisted-classes>false</excluded-unlisted-classes>-->
+        <properties>
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+            <!-- Only one such property is effective -->
+            <property name="javax.persistence.sql-load-script-source" value="init/db_test.sql"/>
+        </properties>
+    </persistence-unit>
+    <!-- Authentication PU -->
+    <persistence-unit name="ssbd03glassfishPU" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:app/jdbc/ssbd03glassfishDS</jta-data-source>
+        <class>com.cruisely.entities.common.wrappers.TokenWrapper</class>
+        <class>com.cruisely.entities.common.wrappers.CodeWrapper</class>
+        <class>com.cruisely.entities.mow.Company</class>
+        <class>com.cruisely.entities.mok.Account</class>
+        <class>com.cruisely.entities.mok.Address</class>
+        <class>com.cruisely.entities.mok.AccessLevel</class>
+        <class>com.cruisely.entities.common.BaseEntity</class>
+        <class>com.cruisely.entities.mok.accesslevels.Client</class>
+        <class>com.cruisely.entities.mok.accesslevels.BusinessWorker</class>
+        <class>com.cruisely.entities.mok.accesslevels.Administrator</class>
+        <class>com.cruisely.entities.mok.accesslevels.Moderator</class>
+        <class>com.cruisely.entities.mok.wrappers.LanguageTypeWrapper</class>
+        <class>com.cruisely.entities.common.wrappers.AlterTypeWrapper</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.canonicalmodel.prefix" value="glassfish"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+    <!-- Application PUs -->
+    <persistence-unit name="ssbd03mokPU" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:app/jdbc/ssbd03mokDS</jta-data-source>
+        <class>com.cruisely.entities.common.wrappers.TokenWrapper</class>
+        <class>com.cruisely.entities.common.wrappers.CodeWrapper</class>
+        <class>com.cruisely.entities.mow.Company</class>
+        <class>com.cruisely.entities.mok.Account</class>
+        <class>com.cruisely.entities.mok.Address</class>
+        <class>com.cruisely.entities.mok.AccessLevel</class>
+        <class>com.cruisely.entities.common.BaseEntity</class>
+        <class>com.cruisely.entities.mok.accesslevels.Client</class>
+        <class>com.cruisely.entities.mok.accesslevels.BusinessWorker</class>
+        <class>com.cruisely.entities.mok.accesslevels.Administrator</class>
+        <class>com.cruisely.entities.mok.accesslevels.Moderator</class>
+        <class>com.cruisely.entities.mok.wrappers.LanguageTypeWrapper</class>
+        <class>com.cruisely.entities.common.wrappers.AlterTypeWrapper</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.canonicalmodel.prefix" value="mok"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="ssbd03mowPU" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:app/jdbc/ssbd03mowDS</jta-data-source>
+        <class>com.cruisely.entities.common.wrappers.AlterTypeWrapper</class>
+        <class>com.cruisely.entities.mow.Attraction</class>
+        <class>com.cruisely.entities.mok.Account</class>
+        <class>com.cruisely.entities.mok.AccessLevel</class>
+        <class>com.cruisely.entities.common.BaseEntity</class>
+        <class>com.cruisely.entities.mok.accesslevels.Client</class>
+        <class>com.cruisely.entities.mok.accesslevels.BusinessWorker</class>
+        <class>com.cruisely.entities.mok.accesslevels.Administrator</class>
+        <class>com.cruisely.entities.mok.accesslevels.Moderator</class>
+        <class>com.cruisely.entities.mow.Company</class>
+        <class>com.cruisely.entities.mow.Cruise</class>
+        <class>com.cruisely.entities.mow.CruiseAddress</class>
+        <class>com.cruisely.entities.mow.CruiseGroup</class>
+        <class>com.cruisely.entities.mow.CruisePicture</class>
+        <class>com.cruisely.entities.mow.Rating</class>
+        <class>com.cruisely.entities.mow.Reservation</class>
+        <class>com.cruisely.entities.mok.Address</class>
+        <class>com.cruisely.entities.mok.wrappers.LanguageTypeWrapper</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.canonicalmodel.prefix" value="mow"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+

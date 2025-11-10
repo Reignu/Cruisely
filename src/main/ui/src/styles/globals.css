@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --pink-light: #FF9FA2;
+    --pink: #FE6D73;
+    --pink-dark: #C63A48;
+    --white-light: #FFFFFF;
+    --white: #FEF9FF;
+    --white-dark: #efebef;
+    --yellow-light: #fffea7;
+    --yellow: #FFCB77;
+    --yellow-dark: #C99A49;
+    --green-light: #64f6e4;
+    --green: #17C3B2;
+    --green-dark: #009283;
+    --blue-light: 5DABCE;
+    --blue: #227C9D;
+    --blue-dark: #00506F;
+    --dark-light: #5a5959;
+    --dark: #474646;
+    --dark-dark: #111111;
+    --header-height: 76px;
+    --header-breadcrumb: 50px;
+}
+
+body *,
+body *::before,
+body *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.MuiMenu-paper>.MuiList-root>.MuiButtonBase-root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.MuiChip-label {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+th, td {
+    padding: 15px;
+}

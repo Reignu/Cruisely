@@ -1,0 +1,23 @@
+.icon-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.icon-wrap > * {
+    margin: 0 12px;
+}
+
+
+.delete:hover {
+    opacity: 1;
+}
+
+.delete.delete {
+    fill: var(--pink-dark);
+    opacity: .7;
+    transition: opacity .3s ease-out;
+}
+
+.create-wrap.create-wrap.create-wrap {
+    background-color: transparent;
+}
