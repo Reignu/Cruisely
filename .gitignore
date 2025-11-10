@@ -1,0 +1,28 @@
+# Java / Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+*.log
+
+# Gradle (if applicable)
+build/
+.gradle/
+
+# IntelliJ / Eclipse / VSCode
+.idea/
+*.iml
+.project
+.classpath
+.vscode/
+
+# React frontend
+node_modules/
+build/
+dist/
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db

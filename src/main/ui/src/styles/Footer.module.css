@@ -1,0 +1,15 @@
+.wrapper.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 60px;
+}
+
+.wrapper-light {
+    background-color: var(--blue-dark);
+}
+
+.wrapper-dark {
+    background-color: var(--dark-dark);
+}

@@ -1,0 +1,74 @@
+.wrapper.wrapper {
+    height: calc(100vh - var(--header-height)*2);
+    background-image: url("../images/ship.jpg");
+    background-position: center center;
+    background-size: cover;
+    margin-top: var(--header-height);
+    padding: 30px 60px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.infowrap, .attractions, .ratings {
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.infowrap {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infowrap h1 {
+    color: var(--blue-dark);
+    font-size: 3.2em;
+}
+
+.infowrap h4 {
+    margin: 8px 0 16px;
+}
+
+.description {
+    color: var(--dark-dark);
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.attractions,
+.ratings {
+    display: flex;
+    flex-direction: column;
+}
+
+.attractions h3,
+.ratings h3 {
+    padding: 24px 0;
+    text-align: right;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.attraction {
+    margin: 16px;
+    padding: 12px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+}
+
+.delete {
+    cursor: pointer;
+    fill: var(--pink-dark);
+    opacity: .7;
+    transition: opacity .3s ease-out;
+}
+
+.delete:hover {
+    opacity: 1;
+}

@@ -1,0 +1,28 @@
+.wrapper.wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: var(--header-height);
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3001;
+}
+
+.wrapper-light {
+    background-color: var(--blue);
+}
+
+.wrapper-dark {
+    background-color: var(--dark-dark);
+}
+
+.link {
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}

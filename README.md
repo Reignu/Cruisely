@@ -8,24 +8,24 @@
 
 > **A comprehensive, enterprise-grade cruise booking and management platform** built with modern Java EE architecture, featuring advanced authentication, role-based access control, and a responsive React frontend.
 
-## 🌟 Overview
+## Overview
 
 Cruisely is a full-stack enterprise application designed for cruise line companies to manage their operations efficiently. The platform provides comprehensive booking management, customer relationship tools, and administrative dashboards with multi-language support and robust security features.
 
-### ✨ Key Features
+### Key Features
 
-- **🔐 Advanced Authentication**: JWT-based security with role-based access control (RBAC)
-- **👥 Multi-Role Architecture**: Admin, Client, Business Worker, and Moderator interfaces  
-- **🚢 Cruise Management**: Complete CRUD operations for cruises, companies, and reservations
-- **📱 Responsive Design**: Modern React frontend with TypeScript support
-- **🌍 Internationalization**: Multi-language support (English/Polish)
-- **📊 Analytics Dashboard**: Real-time business intelligence and reporting
-- **✉️ Email Integration**: Automated notifications and verification system
-- **🔄 CI/CD Ready**: Automated testing and deployment pipelines
+- **Advanced Authentication**: JWT-based security with role-based access control (RBAC)
+- **Multi-Role Architecture**: Admin, Client, Business Worker, and Moderator interfaces  
+- **Cruise Management**: Complete CRUD operations for cruises, companies, and reservations
+- **Responsive Design**: Modern React frontend with TypeScript support
+- **Internationalization**: Multi-language support (English/Polish)
+- **Analytics Dashboard**: Real-time business intelligence and reporting
+- **Email Integration**: Automated notifications and verification system
+- **CI/CD Ready**: Automated testing and deployment pipelines
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend Architecture (Java EE)
 
@@ -35,16 +35,16 @@ com.cruisely/
 │   ├── common/          # Shared domain entities & wrappers
 │   ├── auth/            # Authentication entities (Account, AccessLevel)
 │   └── cruise/          # Business entities (Cruise, Company, Reservation)
-├── 🔧 common/           # Application-wide utilities & DTOs
-├── 🔐 auth/             # Authentication module (business logic)
-├── 🚢 cruise/           # Cruise management module (business logic)
-├── 🌐 controllers/      # REST API controllers
-├── ⚙️ services/         # Application services layer
-├── 🛡️ security/         # Security configuration & filters
-├── 📋 config/           # Application configuration
-├── ⚠️ exceptions/       # Custom exception handling
-├── ✅ validators/       # Input validation logic
-└── 🛠️ utils/           # Utility classes
+├── common/           # Application-wide utilities & DTOs
+├── auth/             # Authentication module (business logic)
+├── cruise/           # Cruise management module (business logic)
+├── controllers/      # REST API controllers
+├── services/         # Application services layer
+├── security/         # Security configuration & filters
+├── config/           # Application configuration
+├── exceptions/       # Custom exception handling
+├── validators/       # Input validation logic
+└── utils/           # Utility classes
 ```
 
 ### Frontend Architecture (React + TypeScript)
@@ -76,7 +76,7 @@ src/main/ui/src/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -145,7 +145,7 @@ asadmin deploy target/cruisely.war
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -177,9 +177,9 @@ asadmin deploy target/cruisely.war
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
-### Authentication & Authorization
+### Authentication & Authorisation
 
 - **JWT Token-based Authentication**: Secure stateless authentication
 - **Role-based Access Control (RBAC)**: Fine-grained permissions system
@@ -206,7 +206,7 @@ asadmin deploy target/cruisely.war
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Backend Testing
 
@@ -313,7 +313,7 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 📈 Monitoring & Observability
+## Monitoring & Observability
 
 ### Health Checks
 
@@ -347,7 +347,7 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 📋 Changelog
+## Changelog
 
 ### v1.0.0 (Current)
 - ✅ Complete package refactoring from academic to enterprise structure
@@ -360,7 +360,7 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -368,8 +368,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Built with ❤️ for the cruise industry**
+**Built with love for the cruise industry**
 
-[🌟 Give a star](https://github.com/your-org/cruisely) • [🐛 Report Bug](ungier.adam@gmail.com)
+[🌟 Give a star](https://github.com/reignu/cruisely) • [🐛 Report Bug](ungier.adam@gmail.com)
 
 </div>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN"
+        "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app>
+
+    <context-root>/</context-root>
+
+    <security-role-mapping>
+        <role-name>Administrator</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>Moderator</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>BusinessWorker</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>Client</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAccountByLogin</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAccountDetailsByLogin</role-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>selfGetAccountDetails</role-name>
+        <group-name>CLIENT</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAccessLevelByLogin</role-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAllAccounts</role-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>getAllUnconfirmedBusinessWorkers</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>ConfirmBusinessWorker</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>blockUser</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>unblockUser</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>grantAccessLevel</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeAccessLevelState</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>requestSomeonesPasswordReset</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeOtherBusinessWorkerData</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeOtherAccountData</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeOtherAccountData</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>authenticatedUser</role-name>
+        <group-name>CLIENT</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeEmail</role-name>
+        <group-name>CLIENT</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeOtherEmail</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeClientData</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeBusinessWorkerData</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeModeratorData</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeAdministratorData</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeOtherClientData</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>SYSTEM</role-name>
+        <group-name>SYSTEM</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>removeClientReservation</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>createReservation</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>cancelReservation</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>publishCruise</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>addAttraction</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>editAttraction</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>ownFindRating</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAllCompanies</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+
+    <security-role-mapping>
+        <role-name>getBusinessWorkersForCompany</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>addCruiseGroup</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>changeCruiseGroup</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>viewCruiseReservations</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getAllCruiseGroupList</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>addCompany</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>editCompany</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getBusinessWorkersByCompanyName</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getClientRating</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>removeClientRating</role-name>
+        <group-name>MODERATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>viewSelfReservations</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>deactivateCruiseGroup</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>deleteAttraction</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getWorkerCruiseReservations</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+
+    <security-role-mapping>
+        <role-name>createRating</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>removeRating</role-name>
+        <group-name>CLIENT</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>addCruise</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>deactivateCruise</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+        <group-name>MODERATOR</group-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>editCruise</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getMetadata</role-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+
+    <security-role-mapping>
+        <role-name>getCruiseGroupForBusinessWorker</role-name>
+        <group-name>BUSINESS_WORKER</group-name>
+    </security-role-mapping>
+
+</glassfish-web-app>
